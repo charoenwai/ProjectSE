@@ -1,0 +1,22 @@
+<!-- <mat-form-field class="selectInput">
+  <mat-placeholder class="placeholder">Test</mat-placeholder>
+  <mat-select [(ngModel)]="select.selectMeetingRoomStatusEvening" name="newRoomStatusEntity.roomStatusName" [(value)] = "select.selectRoomStatusName">
+    <mat-option *ngFor="let meetingEventRoomStatuses of meetingEventRoomStatus" [value]="meetingEventRoomStatuses.newRoomStatusEntity.roomStatusName">
+      {{meetingEventRoomStatuses.newRoomStatusEntity.roomStatusName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field> -->
+<!-- <mat-form-field class="selectInput">
+  <mat-placeholder class="placeholder">Price</mat-placeholder>
+  <input matInput [(ngModel)]="select.selectMeetingRoomStatusEvening" [(value)] = "select.selectRoomStatusName">
+</mat-form-field> -->
+<h2>Meeting Room Status</h2>
+
+  <p class = "statusMeetingRoom">Moring Status     ==>  {{select.selectRoomStatusNameMorning}}</p>
+  <p class = "statusMeetingRoom">Afternoon Status  ==>  {{select.selectRoomStatusNameAfternoon}}</p>
+  <p class = "statusMeetingRoom">Evening Status    ==>  {{select.selectRoomStatusNameEvening}}</p>
+<div mat-dialog-actions>
+  
+  <button mat-button (click)="onNoClick()">Close</button>
+  <!-- <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button> -->
+</div>
